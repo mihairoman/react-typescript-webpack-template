@@ -12,7 +12,7 @@ module.exports = {
         filename: '[name].js'
     },
     resolve: {
-        extensions: ['.tsx', '.ts', '.js', '.jsx']
+        extensions: ['.js', '.jsx', '.ts', '.tsx']
     },
     module: {
         rules: [
@@ -35,7 +35,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'index.html',
             title: 'Webpack Config',
-            template: './src/index.html',
+            template: './public/index.html',
         }),
         new WebpackPwaManifest({
             name: 'Webpack Config',
